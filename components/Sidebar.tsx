@@ -33,7 +33,7 @@ const Sidebar = () => {
       });
 
       setTimeout(() => {
-        signOut({ redirect: true, callbackUrl: '/login' });
+        signOut({ redirect: true, callbackUrl: `${process.env.NEXT_PUBLIC_APP_URL}/login` });
       }, 700);
     }
     setUser(null);
