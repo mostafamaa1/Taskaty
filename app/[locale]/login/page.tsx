@@ -76,7 +76,7 @@ function Page() {
         duration: 1500,
       }); // Displaying a toast notification for login success
       // Connect to the socket server and emit the login event
-      socket = io('http://localhost:3000');
+      socket = io(process.env.NEXT_PUBLIC_APP_URL);
       socket.emit('user:login', { name: loginInfo.email });
       router.push('/'); // Redirecting to the home page after successful login
     }
