@@ -79,5 +79,9 @@
     "PasswordMatch": "كلمة المرور غير مطابقة",
     "AccountCreated": "تم انشاء حسابك بنجاح",
     "failedAccount": "فشل في انشاء حسابك"
+  },
+  "metadata": {
+    "title": "تاسكاتي",
+    "description": "تطبيق لإدارة المهام التعاونية"
   }
 }

@@ -78,5 +78,10 @@
     "PasswordMatch": "Passwords do not match",
     "AccountCreated": "Account Created Successfully",
     "failedAccount": "Failed to Create an Account"
+  },
+  "metadata": 
+  {
+    "title": "Taskaty",
+    "description": "A Collaborative Task Management App"
   }
 }

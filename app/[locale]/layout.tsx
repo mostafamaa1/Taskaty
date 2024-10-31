@@ -18,8 +18,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'Task Management Dashboard',
-  description: 'A full stack task management dashboard with the kanban board',
+  title: 'Taskaty',
+  description: 'A Collaborative Task Management App',
 };
 export default async function LocaleLayout({
   children,

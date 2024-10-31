@@ -33,8 +33,13 @@ const Sidebar = () => {
       });
 
       setTimeout(() => {
-        signOut({ redirect: true, callbackUrl: `${process.env.NEXT_PUBLIC_APP_URL}/login` });
+        // signOut({ redirect: true, callbackUrl: `${process.env.NEXT_PUBLIC_APP_URL}/login` });
+        signOut({
+          redirect: true,
+          callbackUrl: 'https://taskaty.onrender.com/login',
+        });
       }, 700);
+      console.log('Callback URL:', `${process.env.NEXT_PUBLIC_APP_URL}/login`);
     }
     setUser(null);
     setTasks([]);
@@ -138,8 +143,7 @@ const Sidebar = () => {
             </Button>
           </nav>
           <div className='pt-4'>
-            <p
-              className='text-center text-sm font-medium'>
+            <p className='text-center text-sm font-medium'>
               {t('ChangeLanguage')} <LangSwitcher />
             </p>
           </div>
