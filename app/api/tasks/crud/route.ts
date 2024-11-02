@@ -4,7 +4,7 @@ import { connectDB } from '@/lib/db'; // Importing connectDB function from the d
 import { getToken } from 'next-auth/jwt'; // Importing getToken function from next-auth/jwt for token verification
 
 export const GET = async (req: NextRequest) => {
-  const token = await getToken({ req, secret: process.env.AUTH_SECRET }); // Attempting to get the token from the request
+  const token = await getToken({ req, secret: process.env.NEXTAUTH_SECRET }); // Attempting to get the token from the request
 
   if (!token) {
     return NextResponse.json(
@@ -35,7 +35,7 @@ export const GET = async (req: NextRequest) => {
 };
 
 export async function POST(req: NextRequest) {
-  const token = await getToken({ req, secret: process.env.AUTH_SECRET }); // Attempting to get the token from the request
+  const token = await getToken({ req, secret: process.env.NEXTAUTH_SECRET }); // Attempting to get the token from the request
 
   if (!token) {
     return NextResponse.json(
@@ -79,7 +79,7 @@ export async function POST(req: NextRequest) {
 }
 
 export async function PUT(req: NextRequest) {
-  const token = await getToken({ req, secret: process.env.AUTH_SECRET }); // Attempting to get the token from the request
+  const token = await getToken({ req, secret: process.env.NEXTAUTH_SECRET }); // Attempting to get the token from the request
 
   if (!token) {
     return NextResponse.json(
@@ -140,7 +140,7 @@ export async function PUT(req: NextRequest) {
 }
 
 export async function DELETE(req: NextRequest) {
-  const token = await getToken({ req, secret: process.env.AUTH_SECRET }); // Attempting to get the token from the request
+  const token = await getToken({ req, secret: process.env.NEXTAUTH_SECRET }); // Attempting to get the token from the request
 
   if (!token) {
     return NextResponse.json(

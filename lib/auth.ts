@@ -60,5 +60,5 @@ export const authOptions: NextAuthOptions = {
       return session;
     },
   },
-  secret: process.env.AUTH_SECRET, // Use environment variable for secret
+  secret: process.env.NEXTAUTH_SECRET, // Use environment variable for secret
 };

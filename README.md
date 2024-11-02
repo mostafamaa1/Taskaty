@@ -108,11 +108,11 @@ yarn install
 Create a `.env` file in the root directory of the project and add the following environment variables:
 ```bash
 NEXT_PUBLIC_APP_URL=http://localhost:3000
-AUTH_SECRET=your_auth_secret
+NEXTAUTH_SECRET=your_NEXTAUTH_SECRET
 MONGODB_URI=your_mongodb_connection_string
 ```
 
-Replace `your_auth_secret` with a secure string and `your_mongodb_connection_string` with your MongoDB connection string.
+Replace `your_NEXTAUTH_SECRET` with a secure string and `your_mongodb_connection_string` with your MongoDB connection string.
 
 ### Step 4: Start the Development Server
 
